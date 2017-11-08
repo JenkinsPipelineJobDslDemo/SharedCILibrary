@@ -42,9 +42,9 @@ def call(body) {
 					script {
 						def baseDir = "${WORKSPACE}".split("\\")[ -1 ]
 						echo "BaseDir: ${baseDir}"
-						echo "RelDir: ../${baseDir}@libs/fev-jenkins-lib/src/fev/jenkins/utils/DotNetJob.groovy"
+						echo "RelDir: ../${baseDir}@libs/breuer-jenkins-lib/src/breuer/jenkins/utils/DotNetJob.groovy"
 						jobDsl(removedJobAction: 'DELETE', removedViewAction: 'DELETE',
-							targets: "../${baseDir}@libs/fev-jenkins-lib/src/fev/jenkins/utils/DotNetJob.groovy", unstableOnDeprecation: true)
+							targets: "../${baseDir}@libs/breuer-jenkins-lib/src/breuer/jenkins/utils/DotNetJob.groovy", unstableOnDeprecation: true)
 					}
 				}
 			}
